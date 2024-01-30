@@ -1,0 +1,49 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://${PYPI_USERNAME}:${PYPI_PASSWORD}@${PYPI_HOST}/simple"
+verify_ssl = true
+name = "gg-packages"
+
+[packages]
+mescal = {path = ".", editable = true}
+# Do not add packages here but in setup.py
+
+[dev-packages]
+black = "==22.12.0"
+boto3 = "*"
+coverage = "*"
+cryptography = "*"
+cvss = "*"
+diskcache = "*"
+elasticsearch = "*"
+flake8 = "==6.0.0"
+flake8-isort = "*"
+ggflake8 = { version = "==1.2.1", index = "gg-packages" }
+ipython = "*"
+ipywidgets = "*"
+isort = "==5.11.4"
+joblib = "*"
+jupyter = "*"
+jupyterlab = "*"
+leakdigger = {version = "*", index = "gg-packages"}
+levenshtein = "*"
+matplotlib = "*"
+packageurl-python = "*"
+pandas = "*"
+pre-commit = "*"
+pytest = "*"
+pytest-mock = "*"
+pytest-xdist = "*"
+tqdm = "*"
+vcrpy = "*"
+zipencrypt = "*"
+
+[requires]
+python_version = "3.10"
+
+[pipenv]
+allow_prereleases = false
