@@ -4,7 +4,7 @@ cryptography==3.4.8
 decorator==4.4.2
 docutils==0.16
 ebaysdk==2.1.5
-freezegun==0.3.11; python_version < '3.8'
+freezegun==0.3.15; python_version < '3.8'
 freezegun==0.3.15; python_version >= '3.8'
 gevent==1.5.0 ; python_version == '3.7'
 gevent==20.9.0 ; python_version > '3.7' and python_version <= '3.9'
