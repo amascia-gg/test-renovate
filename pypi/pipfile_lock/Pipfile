@@ -25,7 +25,7 @@ flake8-isort = "*"
 ggflake8 = { version = "==1.2.1", index = "gg-packages" }
 ipython = "*"
 ipywidgets = "*"
-isort = "==5.11.4"
+isort = "==5.13.2"
 joblib = "*"
 jupyter = "*"
 jupyterlab = "*"
